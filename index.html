@@ -1,40 +1,150 @@
 <!DOCTYPE html>
 <html lang="DA">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>ELISE HOVE</title>
     <link rel="stylesheet" href="portfolie.css">
-    <a href="#Om">Om</a>
-    <a href="#Projekter">Projekter</a>
-    <a href="#Kontakt">Kontakt</a>
+
+    <meta name="robots" content="noindex">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/ikonikon1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ikonikon1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/ikonikon1.png">
+    <link rel="manifest" href="images/ikonikon1.png">
+    <link rel="mask-icon" href="images/ikonikon1.png" color="#5bbad5">
+    <link rel="shortcut icon" href="images/ikonikon1.png">
+    <meta name="msapplication-config" content="images/ikonikon1.png">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
-<div class="baggrund">
 
-    <body>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#splash"> Splash</a>
+        <a href="#Om">Om</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Kontakt">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
-        <h1> Elise Hove</h1>
-        <h1>Om</h1>
-        <P>Mit navn er Elise og jeg læser til multimediedesigner på Københavns Erhvervsakademi. Jeg har netop færdiggjort 1. semester, og dette er min portfolie over de projekter jeg har produceret på semestret. Jeg bor i Vanløse, hvor jeg også er født og opvokset. Jeg har altid elsket at være kreativ og haft gang i små projekter. Jeg interesserer mig for grafisk design, kunst, mode, møbeldesign og kan godt lide at syg og lave andet håndarbejde.</P>
+    <section id="splash">
+        <h1>Elise Hove</h1>
+
+    </section>
 
 
-        <div class=Projekter>
-            <p>Mine projekter</p>
-            Stilart hjemmeside
-            <br> Redesign af hjemmeside
-            <br> CPH Dox
-            <br> Animation
-            <br> Grundlæggende UX: Øvelsescase
-            <br> Grundlæggende UX: Virksomhedscase
+
+
+
+    <section id="Om">
+        <h2>Om mig</h2>
+        <div class="sectionwrapper">
+            <div class="billede"><img src="images/portraet.png"></div>
+            <div class="column">
+
+                <P>Mit navn er Elise. Jeg er 20 år gammel og læser til multimediedesigner på Københavns Erhvervsakademi. Jeg har netop færdiggjort 1. semester, og dette er min portfolie over de projekter jeg har produceret på semestret. Jeg bor i Vanløse, hvor jeg også er født og opvokset. Jeg interesserer mig for grafisk design, kunst, mode og kommunikation og kan godt lide at sy, male, hækle og have gang i andre små projekter når der er tid til det. Derudover elsker jeg at rejse og møde nye mennesker, samt at tilbringe tid med venner og familie. Som person er jeg meget positiv og smilende, pligtopfyldende, ansvarsbevidst, fleksibel og åben. </P>
+            </div>
+        </div>
+    </section>
+    <button class="cvbtn" onclick="visCV()">Se CV</button>
+    <div class="timeline" id="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2>1997</h2>
+                <p>Født</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>2013</h2>
+                <p>Folkeskolensafgangsbevis fra Katrinedals Skole</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>2016</h2>
+                <p>Student fra Falkonergårdens Gymnasium</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>2016</h2>
+                <p>Ekspedient hos McDonalds Jyllingevej</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>2017</h2>
+                <p>Højskoleophold på Rødding Højskole med design og innovation som hovedfag</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>2017</h2>
+                <p>Studerer til multimediedesigner på KEA</p>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <h2>2017</h2>
+                <p>Ekspedient hos Godthåbskonditoriet</p>
+            </div>
         </div>
 
-    </body>
-    <div class="Kontakt">
-        <footer>Kontakt</footer>
-        E-mail: elisehove@gmail.com
-        <br> Telefon: 29895091
-        <br> Facebook
-        <br> Instagram
     </div>
-</div>
+
+    <section id="Portfolio">
+        <h2>Portfolio</h2>
+        <div class="sectionwrapper">
+            <div class="column">
+                <div class=column_content>
+                    <div class=top> <a href="stilartindex.html"> <img src="images/Desktop.jpg" alt="street art">
+            <p>Stilart hjemmeside</p></a> </div>
+                    <div class="bottom"><br><a href="pilotprojektindex.html"> <img src="images/rekordscopy.png"><p>Pilotprojekt - virksomhedsvideo</p></a></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column_content">
+                    <div class="top"><a href="cphdoxindex.html"> <img src="images/cphdox.png"><p> CPH Dox</p> </a></div>
+                    <div class="bottom"> <a href="animationindex.html"><img src="images/ANIMATIONCOPY.png"><br> Egen animation</a></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column_content">
+                    <div class="top"><a href="redesignindex.html"> <img src="images/mobile_landscape.png" alt="rekords"><br> Redesign af hjemmeside </a></div>
+
+
+                    <div class="bottom"> <br> <a href="sexogindex.html"> <img src="images/instagame.png"> <br>Animation gruppeprojekt</a> </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column_content">
+                    <div class="top"><br> <a href="%C3%B8velsescaseindex.html"> <img src="images/mayday.png"><br>Grundlæggende UX: Øvelsescase </a></div>
+
+                    <a href="virksomhedscaseindex.html"> <img src="images/Repiblikskolen%20pink.jpg"><br>Grundlæggende UX: Virksomhedscase </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+
+
+    <h2>Kontakt</h2>
+    <footer id="Kontakt">
+
+        <div class="facebook"> <br> <a href="https://www.facebook.com/E.l.i.s.eHove"> <img src="images/FacebookIkonpink.png" alt="facebook"> </a></div>
+        <div class="tekst">
+
+            <p> E-mail: elisehove@gmail.com
+                <br> Telefon: 29895091</p>
+        </div>
+
+        <div class="instagram"> <br> <a href="https://www.instagram.com/elisehove/"> <img src="images/instaikonpink.png" alt="instagram"></a></div>
+    </footer>
+
+</body>
+
 </html>
