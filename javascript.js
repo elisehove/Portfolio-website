@@ -1,4 +1,13 @@
-function myFunction() {
+$(window).on("load", visCV);
+
+function visCV() {
+    console.log("1");
+    $(".timeline").hide();
+}
+
+
+
+function dropDown() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
