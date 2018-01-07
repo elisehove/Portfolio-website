@@ -94,6 +94,11 @@ body {
         background-size: cover;
 
     }
+    h2 {
+        -webkit-transition: font-family:'Montserrat';
+        font-weight: 200;
+        /* Safari */
+    }
 
 
 }
@@ -118,6 +123,12 @@ body {
     .instagram {
         margin-right: 50px
     }
+    h2 {
+        -webkit-transition: font-family:'Montserrat';
+        font-weight: 200;
+        /* Safari */
+    }
+
 
 }
 
@@ -135,6 +146,11 @@ body {
         font-family: 'Montserrat';
 
         /************ 1024/768*100=133 *********/
+    }
+    h2 {
+        -webkit-transition: font-family:'Montserrat';
+        font-weight: 200;
+        /* Safari */
     }
 
 
@@ -191,7 +207,7 @@ screen and (min-resolution: 192dpi) and (min-width: 1025px) {
 
 h1 {
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 2.5vw;
     font-weight: 200;
     position: absolute;
@@ -212,14 +228,21 @@ u {
 }
 
 h2 {
+
+    -webkit-transition: font-family:'Montserrat';
+    font-weight: 200;
+    /* Safari */
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 3vw;
 
     margin: 2em;
 }
 
 #Om .sectionwrapper {
+
+
+
     display: flex;
 
     flex-wrap: wrap;
@@ -234,6 +257,7 @@ h2 {
 
     flex-wrap: wrap;
     display: flex;
+
 }
 
 
@@ -245,6 +269,7 @@ h2 {
 #Om .column {
     display: flex;
     flex-grow: 4;
+
     flex-basis: 300px;
 
     flex-wrap: wrap;
@@ -255,17 +280,36 @@ h2 {
 
 #Portfolio .sectionwrapper {
 
-    display: flex;
+        {
+        display: -webkit-flex;
 
-    flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        /* Safari */
+        display: flex;
 
+        flex-wrap: wrap;
 
-
+        /* Safari 6.1+ */
+    }
 }
 
 
 #Portfolio .column {
     flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0 1em 1em;
+    margin: 0.8em;
+
+
+        {
+        -webkit-flex-grow;
+        flex-grow: 1;
+        -webkit-transition;
+        padding 0 1em 1em;
+        -webkit-transition;
+        margin 0.8em;
+    }
+
     flex-basis: 200px;
     padding: 0 1em 1em;
     margin: 0.8em;
@@ -275,28 +319,41 @@ h2 {
     height: 200px;
 
 
+
 }
 
 #Portfolio .column_content {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
-
-#Portfolio .bottom {
-    width: 100%;
+    margin: 1em;
+    padding: 1em 1em;
+    justify-content: space-between;
     text-align: center;
-    align-self: flex-start;
-    bottom: 20px;
+
+
+        {
+
+        display: -webkit-flex;
+        -webkit-flex-wrap: wrap;
+
+        /* Safari */
+    }
 }
 
-#Portfolio .top {
-    align-self: flex-start;
+
+
+
+
+
+
+.UX {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-}
-
-.virksomhed {
-    text-align: right;
 }
 
 a {
@@ -528,6 +585,9 @@ body {
 
 .cvbtn {
 
+    -webkit-transition: font-family:'Montserrat';
+    background-color: white;
+    /* Safari */
     border: none;
     color: black;
     padding: 15px 32px;
@@ -535,7 +595,7 @@ body {
     text-decoration: none;
     align-items: center;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 500;
     margin: 50px 2px;
     cursor: pointer;
 
